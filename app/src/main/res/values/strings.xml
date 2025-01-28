@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="bonjour">Bonjour ceci est un test de ressource</string>
+    <string name="bonjour">Bonjour ceci est un test des ressources</string>
+    <string name="exercice_3">Exercice 3</string>
+    <string name="exercice_2">Exercice 2</string>
+    <string name="exo3">Exo3</string>
 </resources>
