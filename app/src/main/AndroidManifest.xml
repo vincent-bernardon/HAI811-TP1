@@ -23,6 +23,7 @@
         </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".Exo3" />
+        <activity android:name=".Exo4" />
 
     </application>
 
