@@ -10,6 +10,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -166,6 +167,25 @@ public class Exo5 extends AppCompatActivity {
         linearLayout.addView(domaineLayout);
 
         Button button = new Button(this);
+        button.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            if(isFrench){
+                builder.setMessage(getString(R.string.valider2));
+            }else{
+                builder.setMessage(getString(R.string.check2));
+            }
+
+            builder.setPositiveButton("OK", (dialog, which) -> {
+                dialog.dismiss();
+            });
+            builder.setNegativeButton("STOP", (dialog, which) -> {
+                dialog.dismiss();
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
+        });
         if(isFrench){
             button.setText(getString(R.string.valider));
 

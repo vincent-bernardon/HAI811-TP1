@@ -6,4 +6,5 @@
     <string name="yo">Years old</string>
     <string name="check">Check</string>
     <string name="change_language">Change language</string>
+    <string name="check2">Are you sure ?</string>
 </resources>
