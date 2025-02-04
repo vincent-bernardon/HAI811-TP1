@@ -16,5 +16,9 @@
     <string name="exercice_5">Exercice 5</string>
     <string name="exo5">Exo5</string>
     <string name="valider2">Êtes vous sur de votre selection</string>
+    <string name="exercice_6">Exercice 6</string>
+    <string name="exo6">Exo6</string>
+    <string name="retour">Retour</string>
+    <string name="ok">OK</string>
 
 </resources>
