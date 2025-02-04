@@ -23,5 +23,13 @@
     <string name="exercice_7">Exercice 7</string>
     <string name="exo7">Exo7</string>
     <string name="appeler">Appeler</string>
+    <string name="exercice_8">Exercice 8</string>
+    <string name="exo8">Exo8</string>
+    <string name="vers">vers</string>
+    <string-array name="ville">
+        <item>Narbonne</item>
+        <item>Montpellier</item>
+        <item>Beziers</item>
+    </string-array>
 
 </resources>
