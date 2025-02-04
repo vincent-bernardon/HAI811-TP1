@@ -32,4 +32,8 @@
         <item>Beziers</item>
     </string-array>
 
+    <string name="exercice_9">Exercice 9</string>
+    <string name="exo9">Exo9</string>
+    <string name="ajouter_un_v_nement">Ajouter un événement</string>
+
 </resources>

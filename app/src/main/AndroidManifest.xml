@@ -32,6 +32,7 @@
         <activity android:name=".Ex7_page_recup" />
         <activity android:name=".Ex7_NoWay" />
         <activity android:name=".Exo8" />
+        <activity android:name=".Exo9" />
 
 
     </application>
