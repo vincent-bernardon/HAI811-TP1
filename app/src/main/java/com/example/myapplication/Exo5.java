@@ -17,7 +17,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-public class Exo4 extends AppCompatActivity {
+public class Exo5 extends AppCompatActivity {
 
     private boolean isFrench = true;
     private boolean isSwithce = false;
@@ -48,7 +48,7 @@ public class Exo4 extends AppCompatActivity {
         LinearLayout titleLayout = new LinearLayout(this);
         titleLayout.setOrientation(LinearLayout.HORIZONTAL);
         TextView titre = new TextView(this);
-        titre.setText(getString(R.string.exo4));
+        titre.setText(getString(R.string.exo5));
         titleLayout.addView(titre);
 
         View espace = new View(this);

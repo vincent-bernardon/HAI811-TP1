@@ -24,30 +24,27 @@ public class SelectExo extends AppCompatActivity {
         });
 
         Button buttonExo2 = findViewById(R.id.button_exo2);
-        buttonExo2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SelectExo.this, MainActivity.class); //pas bien compris pour quoi il faut spécifier la classe si jamais diapo 61
-                startActivity(intent);
-            }
+        buttonExo2.setOnClickListener(v -> {
+            Intent intent = new Intent(SelectExo.this, MainActivity.class); //pas bien compris pour quoi il faut spécifier la classe si jamais diapo 61
+            startActivity(intent);
         });
 
         Button buttonExo3 = findViewById(R.id.button_exo3);
-        buttonExo3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SelectExo.this, Exo3.class);
-                startActivity(intent);
-            }
+        buttonExo3.setOnClickListener(v -> {
+            Intent intent = new Intent(SelectExo.this, Exo3.class);
+            startActivity(intent);
         });
 
         Button buttonExo4 = findViewById(R.id.button_exo4);
-        buttonExo4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SelectExo.this, Exo4.class);
-                startActivity(intent);
-            }
+        buttonExo4.setOnClickListener(v -> {
+            Intent intent = new Intent(SelectExo.this, Exo4.class);
+            startActivity(intent);
+        });
+
+        Button buttonExo5 = findViewById(R.id.button_exo5);
+        buttonExo5.setOnClickListener(v -> {
+            Intent intent = new Intent(SelectExo.this, Exo5.class);
+            startActivity(intent);
         });
     }
 }

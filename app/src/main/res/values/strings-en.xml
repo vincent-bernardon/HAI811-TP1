@@ -1,0 +1,9 @@
+<resources>
+    <string name="last_name">Last name</string>
+    <string name="first_name">First name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="domain_of_expertise">domain of expertise</string>
+    <string name="yo">Years old</string>
+    <string name="check">Check</string>
+    <string name="change_language">Change language</string>
+</resources>

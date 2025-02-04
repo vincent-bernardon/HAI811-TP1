@@ -24,6 +24,8 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".Exo3" />
         <activity android:name=".Exo4" />
+        <activity android:name=".Exo5" />
+
 
     </application>
 
