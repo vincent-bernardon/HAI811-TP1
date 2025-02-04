@@ -52,5 +52,11 @@ public class SelectExo extends AppCompatActivity {
             Intent intent = new Intent(SelectExo.this, Exo6.class);
             startActivity(intent);
         });
+
+        Button buttonExo7 = findViewById(R.id.button_exo7);
+        buttonExo7.setOnClickListener(v -> {
+            Intent intent = new Intent(SelectExo.this, Exo7.class);
+            startActivity(intent);
+        });
     }
 }

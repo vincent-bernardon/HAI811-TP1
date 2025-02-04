@@ -28,6 +28,9 @@
         <activity android:name=".Exo6" />
         <activity android:name=".Ex6_page_recup" />
         <activity android:name=".Ex6_NoWay" />
+        <activity android:name=".Exo7" />
+        <activity android:name=".Ex7_page_recup" />
+        <activity android:name=".Ex7_NoWay" />
 
 
     </application>

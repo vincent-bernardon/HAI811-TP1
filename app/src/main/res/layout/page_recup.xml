@@ -24,9 +24,7 @@
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="@string/domaine_de_comp_tences"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:id="@+id/editTextText"
@@ -41,10 +39,8 @@
         android:text="@string/nom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149"
         tools:ignore="LabelFor" />
 
     <TextView
@@ -56,14 +52,11 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="text"
         android:minHeight="48dp"
         android:text="@string/age"
         app:layout_constraintEnd_toEndOf="@id/editTextText"
-        app:layout_constraintHorizontal_bias="0.074"
         app:layout_constraintStart_toStartOf="@id/editTextText"
         app:layout_constraintTop_toBottomOf="@id/editTextText"
-        app:layout_constraintVertical_bias="0.149"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -77,10 +70,8 @@
         android:minHeight="48dp"
         android:text="@string/num_ro_de_t_l_phone"
         app:layout_constraintEnd_toEndOf="@id/editTextText2"
-        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="@id/editTextText2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2"
-        app:layout_constraintVertical_bias="0.15"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -96,10 +87,8 @@
         android:text="@string/pr_nom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toEndOf="@+id/editTextText"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
         tools:ignore="LabelFor" />
 
     <Button
@@ -111,9 +100,7 @@
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="-114dp"
         android:text="@string/ok"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="501dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"

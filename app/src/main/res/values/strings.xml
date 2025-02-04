@@ -20,5 +20,8 @@
     <string name="exo6">Exo6</string>
     <string name="retour">Retour</string>
     <string name="ok">OK</string>
+    <string name="exercice_7">Exercice 7</string>
+    <string name="exo7">Exo7</string>
+    <string name="appeler">Appeler</string>
 
 </resources>
