@@ -31,6 +31,30 @@
         <item>Montpellier</item>
         <item>Beziers</item>
     </string-array>
+    <string-array name="NvM">
+        <item>Train n°14 : 8h00 ; arrivée à 10h00</item>
+        <item>Train n°15 : 10h00 ; arrivée à 12h00</item>
+        <item>Train n°16 : 12h00 ; arrivée à 14h00</item>
+    </string-array>
+    <string-array name="MvN">
+        <item>Train n°17 : 14h00 ; arrivée à 16h00</item>
+        <item>Train n°18 : 16h00 ; arrivée à 18h00</item>
+    </string-array>
+    <string-array name="NvB">
+        <item>Train n°19 : 18h00 ; arrivée à 20h00</item>
+        <item>Train n°20 : 20h00 ; arrivée à 22h00</item>
+    </string-array>
+    <string-array name="BvN">
+        <item>Train n°21 : 22h00 ; arrivée à 00h00</item>
+    </string-array>
+    <string-array name="BvM">
+        <item>Train n°22 : 00h00 ; arrivée à 02h00</item>
+        <item>Train n°23 : 02h00 ; arrivée à 04h00</item>
+    </string-array>
+    <string-array name="MvB">
+        <item>Train n°24 : 04h00 ; arrivée à 06h00</item>
+    </string-array>
+
 
     <string name="exercice_9">Exercice 9</string>
     <string name="exo9">Exo9</string>

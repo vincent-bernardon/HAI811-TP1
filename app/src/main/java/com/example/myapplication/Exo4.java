@@ -67,7 +67,6 @@ public class Exo4 extends AppCompatActivity {
         }else{
             lange.setText(getString(R.string.change_language));
         }
-        //espasser le switch du titre
 
         titleLayout.addView(lange);
 

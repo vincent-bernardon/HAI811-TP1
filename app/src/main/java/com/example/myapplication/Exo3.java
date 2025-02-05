@@ -24,7 +24,7 @@ public class Exo3 extends AppCompatActivity {
         EdgeToEdge.enable(this);
 //        parti 1
 //        setContentView(R.layout.activity_exo3);//choix de la page
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> { //permet
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
 //            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 //            return insets;
