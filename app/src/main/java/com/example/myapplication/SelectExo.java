@@ -2,7 +2,6 @@ package com.example.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -25,7 +24,7 @@ public class SelectExo extends AppCompatActivity {
 
         Button buttonExo2 = findViewById(R.id.button_exo2);
         buttonExo2.setOnClickListener(v -> {
-            Intent intent = new Intent(SelectExo.this, MainActivity.class); //pas bien compris pour quoi il faut spécifier la classe si jamais diapo 61
+            Intent intent = new Intent(SelectExo.this, MainActivity.class);
             startActivity(intent);
         });
 

@@ -22,6 +22,7 @@ import java.util.ArrayList;
 
 public class Exo9 extends AppCompatActivity {
     private ArrayMap<String, ArrayList<String>> events = new ArrayMap<>();
+    private LinearLayout eventListLayout; //permet de stocker les événements et gracea cela de les supp
 
     @SuppressLint({"SetTextI18n", "MissingInflatedId"})
     @Override
@@ -34,6 +35,8 @@ public class Exo9 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        eventListLayout = findViewById(R.id.eventListLayout);
 
         Button button = findViewById(R.id.addEvent);
         button.setOnClickListener(v -> {
@@ -65,17 +68,7 @@ public class Exo9 extends AppCompatActivity {
                     events.put(key, list);
                 }
 
-                TextView textView = findViewById(R.id.textView2);
-                StringBuilder text = new StringBuilder();
-                for (String evkey : events.keySet()) {
-                    text.append(evkey).append(" : ");
-                    for (String evvalue : events.get(evkey)) {
-                        text.append(evvalue).append(", ");
-                    }
-                    text.delete(text.length() - 2, text.length());
-                    text.append("\n");
-                }
-                textView.setText(text.toString());
+                updateEventList();
 
 
             });
@@ -86,6 +79,7 @@ public class Exo9 extends AppCompatActivity {
         });
 
 
+        updateEventList();
 
 
 
@@ -93,6 +87,45 @@ public class Exo9 extends AppCompatActivity {
 
 
 
+    }
 
+
+    private void updateEventList() {
+        eventListLayout.removeAllViews(); //on supprime les évènement pour les raficher
+        for (String key : events.keySet()) {
+            LinearLayout list = new LinearLayout(this);
+            list.setOrientation(LinearLayout.VERTICAL);
+
+            TextView eventText = new TextView(this);
+            eventText.setText("\n" + key + " : ");
+            list.addView(eventText);
+
+            for (String value : events.get(key)) {
+                LinearLayout delLayout = new LinearLayout(this);
+                delLayout.setOrientation(LinearLayout.HORIZONTAL);
+
+                TextView event = new TextView(this);
+                event.setText(value);
+                LinearLayout.LayoutParams eventParams = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f); //param pour le textview
+                event.setLayoutParams(eventParams);
+                delLayout.addView(event);
+
+                Button deleteButton = new Button(this);
+                deleteButton.setText("X");
+                LinearLayout.LayoutParams buttonParams = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT); //param pour le bouton
+                deleteButton.setLayoutParams(buttonParams);
+                deleteButton.setOnClickListener(v -> {
+                    events.get(key).remove(value);
+                    if (events.get(key).isEmpty()) {
+                        events.remove(key);
+                    }
+                    updateEventList();
+                });
+                delLayout.addView(deleteButton);
+
+                list.addView(delLayout);
+            }
+            eventListLayout.addView(list);
+        }
     }
 }
